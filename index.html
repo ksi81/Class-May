@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="template/style.css">
+
+    <title>Марафон класів «Вітамінний клас»</title>
+</head>
+
+<body>
+    <div class="myheader">
+        <div class="headermainphoto">
+            <img src="template/img/header-big.png" alt="Логотип Виклику">
+        </div>
+    </div>
+    <div class=" mainblock ">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-sm-2 col-md-4 left-box">
+                    <img class="orangewave" src="template/img/Book.png" alt="">
+                </div>
+                <div class="col-sm col-md-4 main-text">
+                    <h2>Вітаємо, (username)!</h2>
+                    <p>Завантажте 10+ фото з різних класів з краси та отримуйте приємні сюрпризи від Компанії.</p>
+                    <p>Завантажених фото: ( 1) </p>
+                    <div class="row justify-content-center">
+                        <div class=".col-md-4 .offset-md-4 inputbox">
+                            <div class="file_upload">
+                                <div class="addimg">
+                                    <a href="#" onclick="document.getElementById('fileMulti').click(); return false;" />
+                                    <p>ЗАВАНТАЖИТИ</p></a>
+                                    <input type="file" id="fileMulti" class="fileMulti" name="fileMulti[]" multiple
+                                        style="visibility: hidden;" />
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row singleinput">
+                            <div class="col">
+                                <label>Single:</label>
+                                <input type="file" id="file" name="file" />
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col" id="output"></div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class=".col-md-4 .offset-md-4 inputbox">
+                            <div class="file_upload">
+                                <div class="addimg">
+                                    <a href="listbg.html">
+                                        <p>БІЗНЕС-ГРУПА</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-md-4 right-box">
+                    <img class="orangewave img-hor-vert" src="template/img/Book.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+        <!-- <div class="container">
+                <div class="row justify-content-center ">    
+                        <div class="container">
+                                <div class="row">
+                                  <div class="col-sm">
+                                        <img class="" src="template/img/check_yes.png" alt="">
+                                  </div>
+                                  <div class="col-sm">
+                                        <img class="" src="template/img/check_yes.png" alt="">
+                                  </div>
+                                  <div class="col-sm">
+                                        <img class="" src="template/img/check_yes.png" alt="">
+                                  </div>
+                                </div>
+                              </div> 
+                       </div>
+        </div> -->
+
+
+        <div class="col">
+            <div class="whiteblock">
+                <div class="container">
+
+
+                    <div class="row justify-content-center imgblock">
+                        <div class="col" id="outputMulti">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <!-- <div class=".col-md-4 .offset-md-4 inputbox">
+                            <div class="file_upload">
+                                <div class="addimg">
+                                    <a href="listbg.html">
+                                        <p>Бізнес-Група</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- The Modal -->
+                        <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                            aria-hidden="true" backdrop="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="modal-mycontainer">
+                                            <img class="img-thumbnail" src="template/img/test.jpg" alt="">
+                                        </div>
+                                        <div class="col d-flex justify-content-center statusdiv">
+                                            <!-- <span style="color: green;">  -->
+                                            <!-- <i class="  fas fa-smile fa-2x"></i> -->
+                                            <img class="" src="template/img/Check_yes.png" alt="">
+                                            <!-- </span> -->
+                                            <h3 class="d-flex justify-content-center">&nbsp;Фото прийняте</h3>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-dark modalbutton">ВИДАЛИТИ</button>
+                                        <button type="button" class="btn btn-outline-dark modalbutton"
+                                            data-dismiss="modal">ЗАКРИТИ</button><br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- The Modal -->
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="container-fluid footer-legal ">
+            <div class="row legal " id="flip" onclick="scrollWin()">
+                <div class="col">
+                    <p>
+                        *Завантажуючи фото Консультант дає ТОВ «Мері Кей (Україна)
+                        Лтд.» (далі - Компанія) згоду на
+                        його використання шляхом, включаючи, але не обмежуючись, <span class="container legal "
+                            id="panel">
+                            переробки, адаптації фото,
+                            розміщення фото в
+                            друкованих, Інтернет-виданнях компанії, сторінках компанії у соціальних мережах,
+                            презентаціях
+                            та
+                            використання в інших рекламно-інформаційних матеріалах, на території України
+                            протягом
+                            всього строку охорони прав інтелектуальної власності на таке фото, а також
+                            підтверджує та
+                            гарантує, що він
+                            отримав необхідні згоди та дозволи від усіх третіх осіб, в тому числі зображених на
+                            фото, на
+                            його передачу
+                            компанії для використання способами зазначеними вище, та у випадку виникнення
+                            будь-яких
+                            претензій чи
+                            позовів третіх осіб самостійно та за свій рахунок зобов’язується їх врегулювати.</span></p>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid footer-logo ">
+            <div class="row justify-content-center">
+                <img class="" src="template/img/logo.png" alt="">
+            </div>
+        </div>
+</body>
+
+</html>
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="template/js.js"></script>
+<script src="template/popup.js"></script>
+
+
+</body>
+
+</html>

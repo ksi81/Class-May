@@ -1,0 +1,393 @@
+body {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+}
+
+.img-thumbnail {
+  width: 100%;
+  height: 100%;
+  
+  object-fit: cover;
+  /* object-position: 0 0; */
+  padding: 0;
+  z-index: 1;
+}
+
+.myheader {
+  background-color: white;
+  width: 100%;
+}
+
+
+.img-hor-vert {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+ 
+}
+.footer-legal {
+  padding-top: 2%;
+  background-color:#b19799;
+}
+
+.footer-logo{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: white;
+}
+
+
+.mainblock {
+  text-align: center;
+  /* height: 100%;
+  width: 100%; */
+  margin: 0px;
+  padding: 0px;
+  background-color: #fcdfe8;
+
+} 
+.main-text{
+  padding-top: 10%;
+}
+
+
+.left-box{
+  /* margin-left: -10em; */
+  /* background: url(../template/img/Book.png) no-repeat ;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+
+.left-box img {
+   margin-left: -15em;
+}
+
+.right-box{
+  overflow: hidden;
+  /* background: url(../template/img/Book.png) no-repeat ; */
+  /* -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); */
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+  /* margin-right: -15em; */
+}
+.right-box img{
+   margin-right: -15em;
+}
+
+
+.headerblock {
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+  width: 100%;
+}
+
+
+.gallery img {
+  width: 50px;
+  height: 50px;
+}
+
+.logoimg {
+  width: 7rem;
+  margin: 0px;
+  padding: 0px;
+}
+
+.headermainphoto {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.headermainphoto img {
+  width: 100%;
+  height: 100%;
+  margin-top: -3rem;
+}
+
+.orangewave {
+  width: 150%;
+  
+}
+
+.whiteblock {
+  text-align: center;
+  padding: 30px 2px;
+  margin: 5px auto;
+  /* background-color: white; */
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  /* box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.1); */
+
+  /* -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  transform: rotate(-20deg); */
+}
+
+/* add button and  input hide */
+.inputbox {
+  width: 15em;
+  height: 100%;
+  cursor: pointer;
+}
+
+.file_upload {
+  position: relative;
+  overflow: hidden;
+  font-size: 1.8em;
+  height: 2.8em;
+  cursor: pointer;
+}
+
+.file_upload .addimg {
+  /* float: center;
+  width: 8em;
+  height: 100%;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #f7a673;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 10px; */
+}
+
+.addimg p {
+  margin-top: 7px;
+   float: center;
+  width: 8em;
+  height: 100%;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 10px; 
+  color: black;
+}
+
+.addimg a {
+  width: 50px;
+  height: 50px;
+  /* background-color: #f6861f; */
+  text-decoration: none;
+}
+
+.addimg a :hover {
+    background-color: pink;
+  cursor: pointer;
+}
+
+
+
+.file_upload div {
+  cursor: pointer;
+}
+
+.imgblock {
+  padding-top: 1rem;
+}
+
+
+.file_upload input[type=file] {
+  /* position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(20);
+  letter-spacing: 10em;
+  -ms-transform: scale(20);
+  opacity: 0; */
+}
+
+
+.fileMulti [type=file] {
+  /* position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(20);
+  letter-spacing: 10em;
+  -ms-transform: scale(20);
+  opacity: 0;
+  cursor: pointer; */
+}
+
+.singleinput {
+  display: none;
+}
+
+#outputMulti {
+  margin: 5px;
+  padding: 5px;
+  display: contents;
+}
+
+#outputMulti img {
+  cursor: pointer;
+}
+
+.outputdiv {
+  margin-top: -6rem;
+}
+
+.legal p {
+  line-height: 14px;
+  text-align: left;
+}
+
+
+.mycontainer {
+  display: inline-block;
+  width: 15rem;
+  height: 15rem;
+  /* overflow: hidden; */
+  background: #FFFFFF;
+  margin: 10px;
+  position: relative;
+}
+
+.modal-mycontainer {
+  display: inline-block;
+  width: 28rem;
+  height: 30rem;
+  overflow: hidden;
+  background: #FFFFFF;
+  margin: 1px;
+  position: relative;
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+}
+
+.markitem {
+  position: relative;
+  z-index: 5;
+  top: -223px;
+  left: 89px;
+}
+
+
+.modal-content {
+  background-color: white;
+  /* background: url(../template/img/background.png) no-repeat center;  */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.img-status{
+  position: relative;
+  top: -245px;
+  left: -113px;
+  border-radius: 30px;
+  width: 1.8em;
+}
+
+
+
+.statusimg {
+  background-color: white;
+  /* font-size: 2rem; */
+  text-align: center;
+  border-radius: unset;
+  display: inline-grid;
+}
+
+.statusimg h3 {
+  font-size: 2rem;
+  padding-top: 0.8rem;
+  text-align: center;
+}
+
+.modalbutton {
+  width: 15rem;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+.statusdiv {
+  margin-top: 15px;
+  margin-bottom: -15px;
+}
+
+ #panel {
+  display: none;
+  padding-left: inherit;
+} 
+
+@media (max-width: 575.98px) {
+  h2 {
+    font-size: 1, 5em;
+  }
+
+  .mycontainer {
+
+    display: inline-block;
+    width: 6rem;
+    height: 6rem;
+    /* overflow: hidden; */
+    background: #FFFFFF;
+    margin: 10px;
+    position: relative;
+  }
+
+
+  .img-status{
+    position: relative;
+    top: -100px;
+    left: -45px;
+  }
+  
+
+  .markitem {
+    position: relative;
+    z-index: 5;
+    top: -90px;
+    left: 30px;
+  }
+
+  .modal-mycontainer {
+    display: inline-block;
+    width: 100%;
+    height: 26rem;
+    overflow: hidden;
+    background: #FFFFFF;
+    margin: 0px;
+    position: relative;
+  }
+
+  .right-box {
+    display: none;
+  }
+  .left-box {
+    display: none;
+  }
+
+}

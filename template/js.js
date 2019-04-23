@@ -1,0 +1,55 @@
+
+function handleFileSelectSingle(evt) {
+	var file = evt.target.files; // FileList object
+	var f = file[0]
+	// Only process image files.
+	if (!f.type.match('image.*')) {
+		alert("Только изображения....");
+	}
+	var reader = new FileReader();
+
+	// Closure to capture the file information.
+	reader.onload = (function (theFile) {
+		return function (e) {
+			// Render thumbnail.
+			var span = document.createElement('div');
+			span.innerHTML = ['<div class="mycontainer"><img  id="myImg" class="img-thumbnail image" src="', e.target.result, '" title="', escape(theFile.name), '"/><div class="middle"><div class="text">John Doe</div><div class="text">ВИДАЛИТИ</div><div class="text">РЕДАГУВАТИ</div>  </div></div>'].join('');
+			var parentSpan = document.getElementById('output');
+			parentSpan.insertBefore(span, parentSpan.firstChild);
+		};
+	})(f);
+
+	// Read in the image file as a data URL.
+	reader.readAsDataURL(f);
+}
+
+document.getElementById('file').addEventListener('change', handleFileSelectSingle, false);
+
+function handleFileSelectMulti(evt) {
+	var files = evt.target.files; // FileList object
+	var parentSpan = document.getElementById('outputMulti');
+	for (var i = 0, f; f = files[i]; i++) {
+		// Only process image files.
+		if (!f.type.match('image.*')) {
+			alert("Можна додавати тільки зображення!");
+		}
+		var reader = new FileReader();
+		// Closure to capture the file information.
+		reader.onload = (function (theFile) {
+			return function (e) {
+				// Render thumbnail.
+				var span = document.createElement('div');
+				span.innerHTML = ['<div class="mycontainer" data-toggle="modal" data-target="#myModal"><img  id="myImg" class="img-thumbnail image"  src="', e.target.result, '" title="', escape(theFile.name), '"/><img class="img-status" src="template/img/check_yes.png" alt=""> </div></div>'].join('');
+				document.getElementById('outputMulti').insertBefore(span, parentSpan.firstChild);
+			};
+		})(f);
+		// Read in the image file as a data URL.
+		reader.readAsDataURL(f);
+	}
+}
+document.getElementById('fileMulti').addEventListener('change', handleFileSelectMulti, false);
+
+// <span style="color: green;"> <i class=" markitem fas fa-smile fa-2x"></i></span>
+
+//<span style="color: red;"> <i class=" markitem fas fa-frown fa-2x"></i></span> 
+// <span style="color: orange;"> <i class=" markitem fas fa-hourglass-half fa-2x"></i></span> 
