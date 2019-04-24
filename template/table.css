@@ -696,3 +696,13 @@ table.dataTable td {
 		
 	}
 }
+
+@media (max-width: 575.98px) {
+
+	.mobile{
+	  display: block;
+	}
+	.desctop{
+	  display: none;
+	}
+}
